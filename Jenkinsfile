@@ -1,5 +1,10 @@
 pipeline {
      agent any
+	 
+	   environment { 
+        NAME = 'Harp'
+    }
+	
     tools { 
         maven 'Maven' 
         jdk 'Java' 
