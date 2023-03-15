@@ -21,11 +21,6 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
-            steps {
-                bat './jenkins/scripts/deliver.sh'
-            }
-        }
     }
 }
 
