@@ -5,6 +5,10 @@ pipeline {
         jdk 'Java' 
     }
 	
+	 parameters {
+        choice(name: 'environment', choices: ['dev', 'uat', 'prod'], description: 'Select environment to deploy')
+    }
+	
     stages {
         stage('Build') {
             steps {
